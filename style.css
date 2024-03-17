@@ -36,7 +36,7 @@ nav a {color:white; text-decoration:none; font-size:14px; line-height:0.8; paddi
   .flex-column {flex:0 0 100%;}
 }
 
-.banner{color:#fff; background-color:#053B50; height:275px; width:100%; padding-top:80px;}
+.banner{color:#fff; background-color:#053B50; width:100%; padding:70px 0 50px 0;}
 .banner hr{background-color:#fff;}
 .banner a{color:#fff; text-decoration:none;}
 .banner h1{line-height:0.9; padding-bottom:5px;}
