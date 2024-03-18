@@ -9,8 +9,8 @@ hr {border:none; height:1px; background-color:#333; margin:2px auto 15px auto; p
 body {color:#333; margin:0; padding:0; box-sizing:border-box; font-family:Sans; background-color:#EEEEEE;}
 header {box-sizing:border-box; display:flex; justify-content:space-between; align-items:center; background-color:#176B87; color:white; padding:0; margin:0; position:fixed; height:50px; width:100%; top:0; left:0; z-index:1000;}
 .flex-container {box-sizing:border-box; display:flex; flex-wrap:wrap; align-items:flex-start; text-align:left; width:100%; padding:0; margin:0; position:relative;}
-.flex-column {box-sizing:border-box; flex:0 0 50%; padding:20px 10px; margin:0; width:100%; max-width:768px;}
-.flex-column-wide {box-sizing:border-box; flex:0 0 100%; padding:10px; margin:0;}
+.flex-column {box-sizing:border-box; flex:0 0 50%; padding:20px 20px; margin:0; width:100%; max-width:768px;}
+.flex-column-wide {box-sizing:border-box; flex:0 0 100%; padding:20px; margin:0;}
 
 .text-overlay{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:'#333'; text-align:center; background:rgba(0,0,0,0); padding:0; box-sizing:border-box; width:90%; z-index:2;}
 .text-overlay-left{position:absolute; bottom:5px; left:5px; color:'#333'; text-align:left; background:rgba(0,0,0,0); padding:0; box-sizing:border-box; z-index:2;}
@@ -42,7 +42,7 @@ nav a {color:white; text-decoration:none; font-size:14px; line-height:0.8; paddi
 .banner h1{line-height:0.9; padding-bottom:5px;}
 .banner p{font-size:16px; line-height:1.1;}
 
-.footer {box-sizing:border-box; padding:50px 10px; background-color:#176B87; color:#fff; text-align:left;}
+.footer {box-sizing:border-box; padding:50px 20px; background-color:#176B87; color:#fff; text-align:left;}
 .footer hr{background-color:#fff;}
 .footer a{color:#fff;}
 .footer h4{font-size:10px; font-weight:600; margin:0; padding:12px 0 0 0;}
