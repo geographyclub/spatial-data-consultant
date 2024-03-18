@@ -36,13 +36,13 @@ nav a {color:white; text-decoration:none; font-size:14px; line-height:0.8; paddi
   .flex-column {flex:0 0 100%;}
 }
 
-.banner{color:#fff; background-color:#053B50; width:100%; padding:70px 0 50px 0;}
+.banner{color:#fff; background-color:#053B50; width:100%; height:300px; padding-top:70px; position:relative;}
 .banner hr{background-color:#fff;}
 .banner a{color:#fff; text-decoration:none;}
 .banner h1{line-height:0.9; padding-bottom:5px;}
 .banner p{font-size:16px; line-height:1.1;}
 
-.footer {box-sizing:border-box; padding:30px 20px; background-color:#176B87; color:#fff; text-align:left;}
+.footer {box-sizing:border-box; padding:50px 20px; margin-top:30px; background-color:#176B87; color:#fff; text-align:left;}
 .footer hr{background-color:#fff;}
 .footer a{color:#fff;}
 .footer h4{font-size:10px; font-weight:600; margin:0; padding:12px 0 0 0;}
