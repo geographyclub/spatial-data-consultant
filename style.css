@@ -13,15 +13,18 @@ header {box-sizing:border-box; display:flex; justify-content:space-between; alig
 .flex-column-wide {box-sizing:border-box; flex:0 0 100%; padding:20px; margin:0;}
 
 .text-overlay{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:'#333'; text-align:center; background:rgba(0,0,0,0); padding:0; box-sizing:border-box; width:90%; z-index:2;}
-.text-overlay-left{position:absolute; bottom:5px; left:5px; color:'#333'; text-align:left; background:rgba(0,0,0,0); padding:0; box-sizing:border-box; z-index:2;}
+.text-overlay-left{position:absolute; right:0; left:0; text-align:right; color:#333; background:#EEEEEE; padding:5px; box-sizing:border-box; z-index:2; height:100%; width:50%;}
+
+.text-overlay-left h1{font-size:24px; line-height:1;}
+.text-overlay-left p{font-size:12px; line-height:1;}
+
 .text-overlay-right{position:absolute; bottom:5px; right:5px; color:'#333'; text-align:right; background:rgba(0,0,0,0); padding:0; box-sizing:border-box; z-index:2;}
-.text-overlay-right p{font-size:10px;}
 .text-background-black {display:inline-block; background-color:rgba(0,0,0,0.5); margin:0; padding:0 2px;}
 .text-background-white {display:inline-block; background-color:rgba(255,255,255,0.5); margin:0; padding:0 2px;}
 
-.image-container{display:flex; overflow:hidden; position:relative; height:auto; width:100%; margin:0 auto; align-items:center; justify-content:center; background:#000;}
-.image {display:block; width:100%; height:auto; max-height:100%; max-width:768px;}
-.image-small {display:block; width:50%; height:auto; max-height:100%; max-width:100%; margin:auto; border-radius:10px;}
+.image-container{display:flex; overflow:hidden; position:relative; height:auto; width:100%; margin:0 auto; align-items:center; justify-content:center;}
+.image {display:block; width:100%; height:auto; max-height:100%;}
+.image-small {display:block; width:50%; height:auto; max-height:100%; max-width:100%; margin:auto; border-radius:0;}
 .image-large {display:block; width:90%; height:auto; max-height:100%; max-width:100%; margin:auto; border-radius:10px;}
 .image-overlay {position:absolute; transform:translate(-50%,-50%); height:auto;}
 
