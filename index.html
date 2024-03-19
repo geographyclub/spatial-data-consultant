@@ -14,22 +14,24 @@
   <div class="menu-icon">&#9776;</div>
   <nav>
     <a href="#" onclick="closeMenu()">Home</a>
-    <a href="#" target="_blank">Github Repo</a>
-    <!--<a href="#" onclick="scrollToSection('Brunei');">Brunei</a>-->
+    <a href="#" onclick="scrollToSection('web');">Web Development</a>
+    <a href="#" onclick="scrollToSection('map');">Map Making</a>
+    <a href="#" onclick="scrollToSection('spatial');">Spatial Analysis</a>
+    <a href="#" onclick="scrollToSection('tools');">Tools</a>
+    <a href="#" onclick="scrollToSection('data');">Data Sources</a>
+    <a href="#" onclick="scrollToSection('about');">About & Contact</a>
   </nav>
 </header>
 
-<div class="flex-container banner">
-  <div class="flex-column-wide">
+<div class="flex-container">
+
+  <div class="flex-column-wide banner">
     <h1>Spatial data consultant</h1><hr>
     <div style="text-align:right; position:absolute; bottom:20px; right:20px;">
       <p>Steve Kim</p>
       <p>Toronto, Canada</p>
     </div>
   </div>
-</div>
-
-<div class="flex-container">
 
   <div class="flex-column">
     <div class="image-container">
@@ -38,7 +40,7 @@
   </div>
 	
   <div class="flex-column">
-    <h2>Web Development</h2><hr>
+    <h2 id="web">Web Development</h2><hr>
     <p>Making single-purpose websites out of geographic datasets.</p><br>
     <p><a href="https://geographyclub.github.io/american-geography" target="_blank">American Geography</a></p><p>Quick yet revealing look at how States rank in random census categories. Serving the latest figures from the American Community Survey.</p><br>
     <p><a href="https://geographyclub.github.io/factbook" target="_blank">World Factbook Scraper</a></p><p>A feed of random country facts. Retrieves and parses World Factbook JSON files on-the-fly, with over 250 custom maps.</p><br>
@@ -52,7 +54,7 @@
   </div>
 
   <div class="flex-column">
-	<h2>Map making</h2><hr>
+	<h2 id="map">Map Making</h2><hr>
     <p>Working in a number of styles: thematic, topographic, street and more. For a glimpse into how I use spatial software to make maps and analyses, see these open source repositories:</p><br>
   	<p><a href="https://github.com/geographyclub/gis-from-command-line" target="_blank">GIS From Command Line</a></p><p>All the software and scripts you need to make Linux a complete Geographic Information System from command line.</p><br>
     <p><a href="https://github.com/geographyclub/qgis-expressions" target="_blank">QGIS Expressions</a></p><p>A big list of useful expressions to manipulate geographic features in the open source mapping software QGIS.</p><br>
@@ -68,7 +70,7 @@
   </div>
 
   <div class="flex-column">
-	<h2>Spatial Analysis</h2><hr>
+	<h2 id="spatial">Spatial Analysis</h2><hr>
 	<h3>Weather</h3>
     <p>Working with global forecasts of potential weather scenarios from the Canadian GEM model. Also, current weather reports of temperature, sky condition, humidity and wind from over 5,000 METAR stations around the world.</p><br>
 
@@ -80,12 +82,12 @@
   </div>
 
   <div class="flex-column">
-	<h2>Tools</h2><hr>
+	<h2  id="tools">Tools</h2><hr>
 	<span class="tag-red">QGIS</span><span class="tag-red">GDAL/OGR</span><span class="tag-red">GRASS GIS</span><span class="tag-orange">HTML</span><span class="tag-orange">CSS</span><span class="tag-orange">JS</span><span class="tag-orange">LeafletJS</span><span class="tag-green">PostGIS</span><span class="tag-green">PostgreSQL</span><span class="tag-blue">Linux</span><span class="tag-blue">R</span><span class="tag-blue">Python</span>
   </div>
 
   <div class="flex-column">
-	<h2>Data Sources</h2><hr>
+	<h2  id="data">Data Sources</h2><hr>
     <p>Global forecasts of potential weather scenarios up to 16 days at 10 to 15km resolution from the <a href="https://www.weather.gc.ca/ensemble/index_e.html" target="_blank">Canadian GEM model</a>.</p><br>
 
     <p>Current weather reports at over 5,000 <a href="https://aviationweather.gov/data/metar/" target="_blank">METAR stations</a> around the world.</p><br>
@@ -111,11 +113,8 @@
     <p>Population and housing information from the US Census <a href="https://www.census.gov/programs-surveys/acs/" target="_blank">American Community Survey</a>.</p>
   </div>
 
-</div> <!--end flex-container-->
-
-<div class="flex-container">
 <div class="flex-column-wide footer">
-<h2>About</h2>
+<h2 id="about">About</h2>
 <hr>
 <p>Web developer and map maker with a background in Geography and English.</p>
 <h4 id="contact">EMAIL</h4>
@@ -144,19 +143,19 @@ function closeMenu() {
 
 <!-- scroll to section with offset -->
 <script>
-function scrollToSection(sectionId) {
-  const targetSection = document.getElementById(sectionId);
-  const offset = 50;
+  function scrollToSection(sectionId) {
+    const targetSection = document.getElementById(sectionId);
+    const offset = 60;
 
-  if (targetSection) {
-    window.scrollTo({
-	  top: targetSection.offsetTop - offset,
-	  behavior: 'smooth'
-    });
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop - offset,
+        behavior: 'smooth'
+      });
+    }
+    event.preventDefault();
+    closeMenu();
   }
-  event.preventDefault();
-  closeMenu();
-}
 </script>
 
 </body>
